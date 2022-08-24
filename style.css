@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .header {
@@ -9,12 +10,13 @@
     height: 100vh;
 }
 .navdiv1 {
-display: flex;
-justify-content: end;
+    display: flex;
+    justify-content: end;
+    font-size: 0.8rem;
+    color: white;
 
 }
 .navdiv2 {
-    border: solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,11 +34,11 @@ ul li {
     padding: 10px;
 }
 .navh1 {
-    font-size: 4rem;
+    font-size: 48px;
     color: white;
 }
  .navp {
-    font-size: 1.5rem;
+    font-size: 20px;
     color: white;
  }
 .navdiv2 a {
@@ -46,11 +48,7 @@ ul li {
     color: #fff;
     text-decoration: none;
     text-align: center;
-}
-.bolum1 {
-    text-align: center;
-    margin-top: 4rem;
-    
+    line-height: 3rem;
 }
 
 .bolum2 {
@@ -58,13 +56,18 @@ ul li {
     display: flex;
     justify-content: center;
     gap: 20px;
+   
 }
 .bolum2div {
     border-radius: 10px;
     padding: 2rem;
     margin-bottom: 3rem;
     background-color: #FFF3F3;
-    width: 20%;  
+    width: 25%;  
+}
+.bolum2 p {
+    color: gray;
+    font-size: 12px;
 }
 
 .baslık {
@@ -78,7 +81,7 @@ ul li {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    border: solid black;
+    
 }
 .imgdiv img {
     width: 20%;
@@ -97,6 +100,7 @@ ul li {
     gap: 5px;
     width: 20%;
     margin: 5px;
+    font-size: 12px;
 }
 .ikili {
     display: flex;
@@ -113,6 +117,7 @@ ul li {
     background-color: #FFF3F3;
     width: 40%; 
     position: relative;
+    font-size: 12px;
  
 }
 .imgphi img {
@@ -158,4 +163,25 @@ ul li {
     margin-top: 2rem;
     font-size: 1rem;
 
+}
+
+.anabolüm6 {
+    width: 60%;
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    font-size: 12px;
+}
+.soni {
+   display: flex;
+   gap: 2.5rem;
+   justify-content: center;
+}
+.soni i {
+    font-size: 2rem;
+    color: red;
 }
