@@ -5,6 +5,7 @@
     
 }
 
+/* 1. bölüm */
 .header {
     background-image: url(img/banner.png);
     height: 100vh;
@@ -27,11 +28,15 @@
     display: flex;
     padding: 10px;
     list-style: none;
-
 }
-
+.navlist li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
 ul li {
     padding: 10px;
+
 }
 .navh1 {
     font-size: 48px;
@@ -49,7 +54,30 @@ ul li {
     text-decoration: none;
     text-align: center;
     line-height: 3rem;
+    transition: all 3s;
+    
 }
+.navlist li a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    bottom: -3px;
+    transform: rotateY(90deg);
+    transition: all 1s;
+}
+.navlist li a:hover::before {
+transform: rotateY(180deg);
+color: red;
+}
+
+.navdiv2 a:hover {
+    
+    background-color: lightcoral;
+    border: 1px solid lightcoral
+}
+/* 2. bölüm  */
 
 .bolum2 {
     margin-top: 3rem;
@@ -69,23 +97,38 @@ ul li {
     color: gray;
     font-size: 12px;
 }
+.bolum2div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*    2. bölümmm   */
 
 .baslık {
     text-align: center;
     margin-top: 5rem;
 }
+
 .imgdiv {
-    width: 100%;
-    margin-top: 3rem;
+    margin: auto;
+    width: 80%;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
+}
+.imgdiv .image{
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    border-radius: 10px;
+    border: solid black;
     
 }
-.imgdiv img {
-    width: 20%;
+.imgdiv .image img {
+    width: 100%;
     border-radius: 10px;
+    transition: all 1s;
 }
 .üçlü {
     margin-top: 4rem;
@@ -162,6 +205,11 @@ ul li {
     line-height: 3rem;
     margin-top: 2rem;
     font-size: 1rem;
+    transition: 2s;
+}
+.greybolüm a:hover {
+background-color: coral;
+border: 1px solid coral;
 
 }
 
